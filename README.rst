@@ -3,8 +3,7 @@
 Introduction
 ============
 
-This package contains templer templates used by Inigo Consulting as our
-standard package structure.
+This package contains templer templates for Sinar Plone components.
 
 Installation
 =============

@@ -5,7 +5,7 @@ package-name = ${namespace_package}.${package}
 parts = omelette scripts compile_po
 sources-dir = dev
 find-links +=
-    http://packages.sinar-tech.com/packages/
+    http://packages.sinarproject.org/packages/
 #auto-checkout = 
 #    sinar.templer
 

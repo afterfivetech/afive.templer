@@ -7,7 +7,7 @@ from templer.localcommands import SUPPORTS_LOCAL_COMMANDS
 from templer.localcommands import LOCAL_COMMANDS_MESSAGE
 
 
-class InigoBuildout(BasicBuildout):
+class SinarBuildout(BasicBuildout):
     _template_dir = 'templates/sinar_buildout'
     summary = 'A Plone buildout with dev/prod cfg'
     help = ''''''
