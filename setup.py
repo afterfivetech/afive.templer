@@ -14,9 +14,9 @@ long_description = (
     open('CHANGES.txt').read()
     + '\n')
 
-setup(name='inigo.templer',
+setup(name='sinar.templer',
       version=version,
-      description="Convenience templer templates for Inigo stuff",
+      description="Plone templates for Sinar Project",
       long_description=long_description,
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -39,12 +39,12 @@ setup(name='inigo.templer',
         "Topic :: Software Development :: Code Generators",
         ],
       keywords='',
-      author='Inigo Consulting',
-      author_email='team@inigo-tech.com',
-      url='http://github.com/inigoconsulting/inigo.templer',
+      author='Khairil Yusof',
+      author_email='khairil.yusof@sinarproject.org',
+      url='http://github.com/sinar/sinar.templer',
       license='MIT',
       packages=find_packages(),
-      namespace_packages=['inigo'],
+      namespace_packages=['sinar'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
@@ -57,24 +57,24 @@ setup(name='inigo.templer',
       entry_points="""
       # -*- Entry points: -*-
       [paste.paster_create_template]
-      inigo_plone = inigo.templer:InigoPlone
-      inigo_policy = inigo.templer:InigoPolicy
-      inigo_theme = inigo.templer:InigoTheme
-      inigo_buildout = inigo.templer:InigoBuildout
-      inigo_i18noverride = inigo.templer:InigoI18NOverride
+      sinar_plone = sinar.templer:SinarPlone
+      sinar_policy = sinar.templer:SinarPolicy
+      sinar_theme = sinar.templer:SinarTheme
+      sinar_buildout = sinar.templer:SinarBuildout
+      sinar_i18noverride = sinar.templer:SinarI18NOverride
 
       [templer.templer_sub_template]
-      content_type = inigo.templer.localcommands.dexterity:DexterityContent
-      behavior = inigo.templer.localcommands.dexterity:DexterityBehavior
-      upgrade_profile = inigo.templer.localcommands.genericsetup:UpgradeProfile
-      skin_layer = inigo.templer.localcommands.genericsetup:SkinLayer
-      schemaextender = inigo.templer.localcommands.archetypes:SchemaExtender
-      basic_portlet = inigo.templer.localcommands.portlet:BasicPortlet
-      nonconfigurable_portlet = inigo.templer.localcommands.portlet:NonConfigurablePortlet
-      viewlet = inigo.templer.localcommands.browser:Viewlet
-      view = inigo.templer.localcommands.browser:View
-      css = inigo.templer.localcommands.genericsetup:CSSResource
-      js = inigo.templer.localcommands.genericsetup:JSResource
-      vocabulary = inigo.templer.localcommands.components:Vocabulary
+      content_type = sinar.templer.localcommands.dexterity:DexterityContent
+      behavior = sinar.templer.localcommands.dexterity:DexterityBehavior
+      upgrade_profile = sinar.templer.localcommands.genericsetup:UpgradeProfile
+      skin_layer = sinar.templer.localcommands.genericsetup:SkinLayer
+      schemaextender = sinar.templer.localcommands.archetypes:SchemaExtender
+      basic_portlet = sinar.templer.localcommands.portlet:BasicPortlet
+      nonconfigurable_portlet = sinar.templer.localcommands.portlet:NonConfigurablePortlet
+      viewlet = sinar.templer.localcommands.browser:Viewlet
+      view = sinar.templer.localcommands.browser:View
+      css = sinar.templer.localcommands.genericsetup:CSSResource
+      js = sinar.templer.localcommands.genericsetup:JSResource
+      vocabulary = sinar.templer.localcommands.components:Vocabulary
       """,
       )
