@@ -39,6 +39,6 @@ in Plone's Add/Remove products form.
     def pre(self, command, output_dir, vars):
         super(SinarPlone, self).pre(command, output_dir, vars)
         vars['use_localcommands'] = self.use_local_commands
-        vars['author'] = 'Sinar Consulting'
+        vars['author'] = 'Sinar Project'
         vars['author_email'] = 'team@sinarproject.org'
         vars['url'] = 'http://github.com/sinar'
