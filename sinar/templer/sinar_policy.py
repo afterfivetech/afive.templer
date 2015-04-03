@@ -41,4 +41,4 @@ in Plone's Add/Remove products form.
         vars['use_localcommands'] = self.use_local_commands
         vars['author'] = 'Sinar Consulting'
         vars['author_email'] = 'team@sinarproject.org'
-        vars['url'] = 'http://github.com/sinarconsulting/'
+        vars['url'] = 'http://github.com/Sinar/'

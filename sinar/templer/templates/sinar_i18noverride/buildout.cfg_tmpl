@@ -10,7 +10,7 @@ find-links +=
 #    sinar.templer
 
 #[sources]
-#sinar.templer = git https://github.com/sinarconsulting/sinar.templer.git
+#sinar.templer = git https://github.com/Sinar/sinar.templer.git
 
 [versions]
 plone.app.multilingual = 1.2
