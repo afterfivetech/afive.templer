@@ -32,7 +32,6 @@ setup(name=${repr($project)},
           'plone.app.referenceablebehavior',
           'collective.dexteritytextindexer',
           'plone.app.multilingual',
-          'plone.multilingualbehavior',
           'plone.app.versioningbehavior',
           'five.pt',
           # -*- Extra requirements: -*-
