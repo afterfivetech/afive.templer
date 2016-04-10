@@ -16,7 +16,7 @@ long_description = (
 
 setup(name='afive.templer',
       version=version,
-      description="Plone templates for Afive Project",
+      description="Plone templates for Afive Projects",
       long_description=long_description,
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -39,9 +39,9 @@ setup(name='afive.templer',
         "Topic :: Software Development :: Code Generators",
         ],
       keywords='',
-      author='Khairil Yusof',
-      author_email='khairil.yusof@afiveproject.org',
-      url='http://github.com/afive/afive.templer',
+      author='Holden Hao',
+      author_email='holden@afterfivetech.com',
+      url='http://github.com/afterfivetech/afive.templer',
       license='MIT',
       packages=find_packages(),
       namespace_packages=['afive'],
