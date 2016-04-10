@@ -1,0 +1,43 @@
+[buildout]
+#extensions = buildout.bootstrap mr.developer
+extends = https://raw.githubusercontent.com/collective/buildout.plonetest/master/test-4.x.cfg
+package-name = ${namespace_package}.${package}
+parts = omelette scripts compile_po
+sources-dir = dev
+find-links +=
+    http://packages.sinarproject.org/packages/
+#auto-checkout = 
+#    sinar.templer
+
+#[sources]
+#sinar.templer = git https://github.com/Sinar/sinar.templer.git
+
+[versions]
+plone.app.multilingual = 1.2
+sinar.templer = 1.5
+
+[test]
+recipe = zc.recipe.testrunner
+defaults = ['--tests-pattern', '^f?tests$', '-v']
+eggs = ${namespace_package}.${package} [test]
+
+[omelette]
+recipe = collective.recipe.omelette
+eggs = \${instance:eggs}
+
+[instance]
+eggs += Pillow
+
+[compile_po]
+recipe = collective.recipe.template
+input = templates/compile_po.in
+output = \${buildout:directory}/bin/compile_po
+mode = 755
+
+[scripts]
+recipe = zc.recipe.egg
+eggs = 
+    sinar.templer
+    PasteScript
+    zest.releaser
+    ${namespace_package}.${package}
