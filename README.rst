@@ -3,7 +3,7 @@
 Introduction
 ============
 
-This package contains templer templates for Sinar Plone components.
+This package contains templer templates for Afive Plone components.
 
 Installation
 =============
@@ -20,14 +20,14 @@ Create a buildout using this configuration::
   recipe = zc.recipe.egg
   eggs = 
      templer.core
-     sinar.templer
+     afive.templer
 
 Method 2: Install into system python
 ------------------------------------
 
 ::
 
-  easy_install sinar.templer
+  easy_install afive.templer
 
 
 Usage
@@ -38,7 +38,7 @@ Instantiating template
 
 ::
 
-  templer sinar_plone
+  templer afive_plone
 
 This will create a folder with your development package.
 
@@ -61,7 +61,7 @@ Once buildout is successful, you can use paster to add localcommand templates::
 Templates
 ==========
 
-sinar_plone
+afive_plone
 ------------
 
 This template contains our standardized package structure and several local
@@ -105,7 +105,7 @@ Todo/Wishlist:
 
 * custom indexer, z3cform widget, catalog index,  topic metadata
 
-sinar_buildout
+afive_buildout
 --------------
 
 This template provides a skeleton buildout which provides:
@@ -119,7 +119,7 @@ This template provides a skeleton buildout which provides:
 
 * example haproxy.cfg and varnish.vcl
 
-sinar_theme
+afive_theme
 ------------
 
 This template provides an initial Diazo theme package to work with. It includes
@@ -133,14 +133,14 @@ Local commands usable here:
 * *js* - This adds genericsetup xml settings for inclusion of js
 
 
-sinar_policy
+afive_policy
 -------------
 
 This template provides a basic package which is useful as a site policy
 package. Its simple a basic package with genericsetup install/upgrade profile,
 and a browserlayer.
 
-sinar_i18noverride
+afive_i18noverride
 -------------------
 
 This template provide a basic package for overriding locales
@@ -149,7 +149,7 @@ Hacking/Contributing
 =====================
 
 Feel free to fork and modify/add functionalities and submit improvements for
-this package. It is using sinar.* namespace primarily because the template
+this package. It is using afive.* namespace primarily because the template
 layout is following our internal best practices, of which might not be the 
 same as upstream Plone practices. However, we believe that some of these should
 be pushed upstream if the community want it.

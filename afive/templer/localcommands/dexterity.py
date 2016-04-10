@@ -4,7 +4,7 @@ Local command templates for the dexterity templer templates
 from templer.core.vars import var
 from templer.localcommands import TemplerLocalTemplate
 
-from sinar.templer.localcommands import SubTemplate
+from afive.templer.localcommands import SubTemplate
 
 class DexterityContent(SubTemplate):
     """

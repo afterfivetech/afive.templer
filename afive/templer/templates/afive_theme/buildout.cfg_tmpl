@@ -5,16 +5,16 @@ package-name = ${namespace_package}.${package}
 parts = omelette scripts
 sources-dir = dev
 find-links +=
-    http://packages.sinarproject.org/packages/
+    http://packages.afiveproject.org/packages/
 #auto-checkout = 
-#    sinar.templer
+#    afive.templer
 
 #[sources]
-#sinar.templer = git https://github.com/Sinar/sinar.templer.git
+#afive.templer = git https://github.com/Afive/afive.templer.git
 
 [versions]
 plone.app.multilingual = 1.2
-sinar.templer = 1.5
+afive.templer = 1.5
 
 [test]
 recipe = zc.recipe.testrunner
@@ -31,7 +31,7 @@ eggs += Pillow
 [scripts]
 recipe = zc.recipe.egg
 eggs = 
-    sinar.templer
+    afive.templer
     PasteScript
     zest.releaser
     ${namespace_package}.${package}

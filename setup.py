@@ -14,9 +14,9 @@ long_description = (
     open('CHANGES.txt').read()
     + '\n')
 
-setup(name='sinar.templer',
+setup(name='afive.templer',
       version=version,
-      description="Plone templates for Sinar Project",
+      description="Plone templates for Afive Project",
       long_description=long_description,
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -40,11 +40,11 @@ setup(name='sinar.templer',
         ],
       keywords='',
       author='Khairil Yusof',
-      author_email='khairil.yusof@sinarproject.org',
-      url='http://github.com/sinar/sinar.templer',
+      author_email='khairil.yusof@afiveproject.org',
+      url='http://github.com/afive/afive.templer',
       license='MIT',
       packages=find_packages(),
-      namespace_packages=['sinar'],
+      namespace_packages=['afive'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
@@ -57,24 +57,24 @@ setup(name='sinar.templer',
       entry_points="""
       # -*- Entry points: -*-
       [paste.paster_create_template]
-      sinar_plone = sinar.templer:SinarPlone
-      sinar_policy = sinar.templer:SinarPolicy
-      sinar_theme = sinar.templer:SinarTheme
-      sinar_buildout = sinar.templer:SinarBuildout
-      sinar_i18noverride = sinar.templer:SinarI18NOverride
+      afive_plone = afive.templer:AfivePlone
+      afive_policy = afive.templer:AfivePolicy
+      afive_theme = afive.templer:AfiveTheme
+      afive_buildout = afive.templer:AfiveBuildout
+      afive_i18noverride = afive.templer:AfiveI18NOverride
 
       [templer.templer_sub_template]
-      content_type = sinar.templer.localcommands.dexterity:DexterityContent
-      behavior = sinar.templer.localcommands.dexterity:DexterityBehavior
-      upgrade_profile = sinar.templer.localcommands.genericsetup:UpgradeProfile
-      skin_layer = sinar.templer.localcommands.genericsetup:SkinLayer
-      schemaextender = sinar.templer.localcommands.archetypes:SchemaExtender
-      basic_portlet = sinar.templer.localcommands.portlet:BasicPortlet
-      nonconfigurable_portlet = sinar.templer.localcommands.portlet:NonConfigurablePortlet
-      viewlet = sinar.templer.localcommands.browser:Viewlet
-      view = sinar.templer.localcommands.browser:View
-      css = sinar.templer.localcommands.genericsetup:CSSResource
-      js = sinar.templer.localcommands.genericsetup:JSResource
-      vocabulary = sinar.templer.localcommands.components:Vocabulary
+      content_type = afive.templer.localcommands.dexterity:DexterityContent
+      behavior = afive.templer.localcommands.dexterity:DexterityBehavior
+      upgrade_profile = afive.templer.localcommands.genericsetup:UpgradeProfile
+      skin_layer = afive.templer.localcommands.genericsetup:SkinLayer
+      schemaextender = afive.templer.localcommands.archetypes:SchemaExtender
+      basic_portlet = afive.templer.localcommands.portlet:BasicPortlet
+      nonconfigurable_portlet = afive.templer.localcommands.portlet:NonConfigurablePortlet
+      viewlet = afive.templer.localcommands.browser:Viewlet
+      view = afive.templer.localcommands.browser:View
+      css = afive.templer.localcommands.genericsetup:CSSResource
+      js = afive.templer.localcommands.genericsetup:JSResource
+      vocabulary = afive.templer.localcommands.components:Vocabulary
       """,
       )

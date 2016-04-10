@@ -7,13 +7,13 @@ from templer.localcommands import SUPPORTS_LOCAL_COMMANDS
 from templer.localcommands import LOCAL_COMMANDS_MESSAGE
 
 
-class SinarPolicy(BasicZope):
-    _template_dir = 'templates/sinar_policy'
+class AfivePolicy(BasicZope):
+    _template_dir = 'templates/afive_policy'
     summary = 'A basic Plone site policy package'
     help = '''
 This template support local commands. These commands allow you 
 to generate skeleton contenttype, behavior, upgrade profiles, 
-schemaextender, etc, etc. All that common in Sinar's line of
+schemaextender, etc, etc. All that common in Afive's line of
 work
 '''
     post_run_msg = LOCAL_COMMANDS_MESSAGE
@@ -37,8 +37,8 @@ in Plone's Add/Remove products form.
     ))
 
     def pre(self, command, output_dir, vars):
-        super(SinarPolicy, self).pre(command, output_dir, vars)
+        super(AfivePolicy, self).pre(command, output_dir, vars)
         vars['use_localcommands'] = self.use_local_commands
-        vars['author'] = 'Sinar Consulting'
-        vars['author_email'] = 'team@sinarproject.org'
-        vars['url'] = 'http://github.com/Sinar/'
+        vars['author'] = 'Afive Consulting'
+        vars['author_email'] = 'team@afiveproject.org'
+        vars['url'] = 'http://github.com/Afive/'

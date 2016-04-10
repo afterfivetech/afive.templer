@@ -1,5 +1,5 @@
 from templer.core.vars import var
-from sinar.templer.localcommands import SubTemplate
+from afive.templer.localcommands import SubTemplate
 
 class Vocabulary(SubTemplate):
     _template_dir = 'templates/components/vocabulary'
