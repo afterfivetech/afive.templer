@@ -1,4 +1,0 @@
- <portlet 
-   addview="${portlet_id}"
-   title="${portlet_name}"
-   description="${portlet_description}"/>
