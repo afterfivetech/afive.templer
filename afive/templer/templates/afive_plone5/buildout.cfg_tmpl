@@ -1,0 +1,37 @@
+[buildout]
+#extensions = buildout.bootstrap mr.developer
+extends = https://raw.githubusercontent.com/collective/buildout.plonetest/master/test-5.x.cfg
+package-name = ${namespace_package}.${package}
+parts = omelette scripts
+sources-dir = dev
+find-links +=
+    http://pypi.afterfivetech.com/packages/
+#auto-checkout = 
+#    afive.templer
+
+#[sources]
+#afive.templer = git https://github.com/afterfivetech/afive.templer.git
+
+[versions]
+plone.app.multilingual = 1.2
+afive.templer = 1.5
+
+[test]
+recipe = zc.recipe.testrunner
+defaults = ['--tests-pattern', '^f?tests$', '-v']
+eggs = ${namespace_package}.${package} [test]
+
+[omelette]
+recipe = collective.recipe.omelette
+eggs = \${instance:eggs}
+
+[instance]
+eggs += Pillow
+
+[scripts]
+recipe = zc.recipe.egg
+eggs = 
+    afive.templer
+    PasteScript
+    zest.releaser
+    ${namespace_package}.${package}
