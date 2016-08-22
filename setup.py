@@ -58,6 +58,7 @@ setup(name='afive.templer',
       # -*- Entry points: -*-
       [paste.paster_create_template]
       afive_plone = afive.templer:AfivePlone
+      afive_plone5 = afive.templer:AfivePlone5
       afive_policy = afive.templer:AfivePolicy
       afive_theme = afive.templer:AfiveTheme
       afive_buildout = afive.templer:AfiveBuildout
