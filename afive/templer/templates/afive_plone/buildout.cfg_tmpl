@@ -5,16 +5,16 @@ package-name = ${namespace_package}.${package}
 parts = omelette scripts
 sources-dir = dev
 find-links +=
-    http://packages.afiveproject.org/packages/
+    http://pypi.afterfivetech.com/packages/
 #auto-checkout = 
 #    afive.templer
 
 #[sources]
-#afive.templer = git https://github.com/Afive/afive.templer.git
+#afive.templer = git https://github.com/afterfivetech/afive.templer.git
 
 [versions]
 plone.app.multilingual = 1.2
-afive.templer = 1.5
+afive.templer = 1.6
 
 [test]
 recipe = zc.recipe.testrunner
