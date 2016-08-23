@@ -125,6 +125,13 @@ This template provides a skeleton buildout which provides:
 
 * example haproxy.cfg and varnish.vcl
 
+
+afive_buildout5
+---------------
+
+Provides a skeleton for a Plone 5 buildout
+
+
 afive_theme
 ------------
 

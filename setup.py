@@ -62,6 +62,7 @@ setup(name='afive.templer',
       afive_policy = afive.templer:AfivePolicy
       afive_theme = afive.templer:AfiveTheme
       afive_buildout = afive.templer:AfiveBuildout
+      afive_buildout5 = afive.templer:AfiveBuildout5
       afive_i18noverride = afive.templer:AfiveI18NOverride
 
       [templer.templer_sub_template]
