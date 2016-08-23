@@ -13,7 +13,8 @@ find-links +=
 #afive.templer = git https://github.com/afterfivetech/afive.templer.git
 
 [versions]
-plone.app.multilingual = 1.2
+## comment out version pin for Plone 5
+#plone.app.multilingual = 1.2
 afive.templer = 1.6
 
 [test]
