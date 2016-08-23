@@ -31,7 +31,7 @@ setup(name=${repr($project)},
           'collective.grok',
           'plone.app.referenceablebehavior',
           'collective.dexteritytextindexer',
-          'plone.app.multilingual<=3.0.0',
+          'plone.app.multilingual<3.0.0',
           'plone.app.versioningbehavior',
           'five.pt',
           # -*- Extra requirements: -*-

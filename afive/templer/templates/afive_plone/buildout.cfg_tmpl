@@ -13,7 +13,7 @@ find-links +=
 #afive.templer = git https://github.com/afterfivetech/afive.templer.git
 
 [versions]
-plone.app.multilingual = 1.2
+# plone.app.multilingual = 1.2 <- already set in setup.py
 afive.templer = 1.6
 
 [test]
