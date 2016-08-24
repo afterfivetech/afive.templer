@@ -1,7 +1,8 @@
 from zope.interface import alsoProvides, implements
 from zope.component import adapts
 from zope import schema
-from plone.directives import form
+#from plone.directives import form
+from plone.supermodel import model
 from plone.dexterity.interfaces import IDexterityContent
 from plone.autoform.interfaces import IFormFieldProvider
 
@@ -11,7 +12,7 @@ from plone.formwidget.contenttree import ObjPathSourceBinder
 
 from ${package_dotted_name} import MessageFactory as _
 
-class ${behavior_interfacename}(form.Schema):
+class ${behavior_interfacename}(model.Schema):
     """
        Marker/Form interface for ${behavior_name}
     """
