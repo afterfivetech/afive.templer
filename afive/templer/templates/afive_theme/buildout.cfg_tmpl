@@ -5,7 +5,7 @@ package-name = ${namespace_package}.${package}
 parts = omelette scripts
 sources-dir = dev
 find-links +=
-    http://pypi.afterfivetech.com/packages/
+    https://pypi.afterfivetech.com/packages/
 #auto-checkout = 
 #    afive.templer
 
