@@ -14,7 +14,8 @@ find-links +=
 
 [versions]
 # plone.app.multilingual = 1.2 <- already set in setup.py
-afive.templer = 1.6
+afive.templer = 1.7.1
+zest.releaser = 6.9
 
 [test]
 recipe = zc.recipe.testrunner
@@ -34,4 +35,5 @@ eggs =
     afive.templer
     PasteScript
     zest.releaser
+    gocept.zestreleaser.customuploader
     ${namespace_package}.${package}
