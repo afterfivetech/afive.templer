@@ -1,10 +1,12 @@
 Changelog
 =========
 
-1.7 (unreleased)
+1.7 (2017-02-27)
 ----------------
 
-- Nothing changed yet.
+- change pypi address to https
+- use schema from plone.supermodel
+- use directives from plone.autoform
 
 
 1.6 (2016-08-23)
