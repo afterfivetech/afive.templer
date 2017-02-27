@@ -35,5 +35,5 @@ eggs =
     afive.templer
     PasteScript
     zest.releaser
-    gocept.zestreleaser.customuploader
+    gocept.zestreleaser.customupload
     ${namespace_package}.${package}
