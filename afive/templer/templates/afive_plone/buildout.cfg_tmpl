@@ -14,7 +14,7 @@ find-links +=
 
 [versions]
 # plone.app.multilingual = 1.2 <- already set in setup.py
-afive.templer = 1.7.1
+afive.templer = 1.7.2
 zest.releaser = 6.9
 
 [test]

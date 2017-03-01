@@ -15,7 +15,7 @@ find-links +=
 [versions]
 ## comment out version pin for Plone 5
 #plone.app.multilingual = 1.2
-afive.templer = 1.7.1
+afive.templer = 1.7.2
 zest.releaser = 6.9
 
 [test]
