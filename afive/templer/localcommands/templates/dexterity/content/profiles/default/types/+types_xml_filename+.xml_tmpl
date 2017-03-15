@@ -39,12 +39,21 @@
   <property name="link_target"></property>
   <property name="immediate_view">view</property>
   <property name="default_view">view</property>
+#if str($folderish) == 'True'
   <property name="view_methods">
-   <element value="view"/>
+    <element value="view"/>
+    <element value="full_view"/>
+    <element value="listing_view"/>
+    <element value="summary_view"/>
+    <element value="tabular_view"/>
   </property>
+#else
+  <property name="view_methods">
+    <element value="view"/>
+  </property>
+#end if
   <property name="default_view_fallback">False</property>
   <property name="add_permission">cmf.AddPortalContent</property>
-
 
   <!-- Method aliases -->
   <alias from="(Default)" to="(dynamic view)" />
