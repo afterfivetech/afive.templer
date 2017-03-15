@@ -1,8 +1,9 @@
 from zope.interface import alsoProvides, implements
 from zope.component import adapts
 from zope import schema
-#from plone.directives import form
+from plone.directives import form
 from plone.supermodel import model
+from plone.autorform import directives
 from plone.dexterity.interfaces import IDexterityContent
 from plone.autoform.interfaces import IFormFieldProvider
 

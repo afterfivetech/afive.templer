@@ -1,7 +1,7 @@
 from five import grok
-#from plone.directives import dexterity, form
+from plone.directives import dexterity, form
 from plone.supermodel import model
-from plone.autoform import directives as form
+from plone.autoform import directives
 
 from Products.CMFCore.utils import getToolByName
 
