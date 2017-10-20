@@ -27,8 +27,17 @@ Method 2: Install into system python
 
 ::
 
-  easy_install afive.templer
+  pip install afive.templer
 
+This will fetch the latest released version.  You need to have the correct 
+repository address in the index of your pip config (~/.pip/pip.conf).
+
+::
+
+  [global]
+  ; Extra index to private pypi dependencies
+  extra-index-url = https://pypi.afterfivetech.com/simple/
+  trusted-host = pypi.afterfivetech.com
 
 Usage
 =====
