@@ -1,19 +1,18 @@
-from zope.interface import alsoProvides, implements
-from zope.component import adapts
-from zope import schema
-from plone.directives import form
-from plone.supermodel import model
+from Products.CMFCore.utils import getToolByName
+from plone.autoform.interfaces import IFormFieldProvider
 from plone.autorform import directives
 from plone.dexterity.interfaces import IDexterityContent
-from plone.autoform.interfaces import IFormFieldProvider
-
-from Products.CMFCore.utils import getToolByName
-
-from plone.namedfile import field as namedfile
-from z3c.relationfield.schema import RelationChoice, RelationList
+from plone.directives import form
 from plone.formwidget.contenttree import ObjPathSourceBinder
+from plone.namedfile import field as namedfile
+from plone.supermodel import model
+from z3c.relationfield.schema import RelationChoice, RelationList
+from zope import schema
+from zope.component import adapts
+from zope.interface import alsoProvides, implements
 
 from ${package_dotted_name} import MessageFactory as _
+
 
 class ${behavior_interfacename}(model.Schema):
     """

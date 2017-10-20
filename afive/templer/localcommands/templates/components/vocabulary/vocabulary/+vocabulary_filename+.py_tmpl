@@ -1,9 +1,10 @@
 from five import grok
-from zope.schema.interfaces import IContextSourceBinder
-from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
-from zope.schema.interfaces import IVocabularyFactory
-from zope.component import getUtility
 from z3c.formwidget.query.interfaces import IQuerySource
+from zope.component import getUtility
+from zope.schema.interfaces import IContextSourceBinder
+from zope.schema.interfaces import IVocabularyFactory
+from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+
 
 class ${vocabulary_classname}(grok.GlobalUtility):
     grok.name('${package_dotted_name}.${vocabulary_filename}')

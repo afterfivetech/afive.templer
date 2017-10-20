@@ -1,11 +1,10 @@
-from five import grok
-#from plone.directives import dexterity, form
-from plone.autoform import directives as form
-from plone.directives import dexterity
-
 from Products.CMFCore.utils import getToolByName
+from five import grok
+from plone.autoform import directives
+from plone.directives import dexterity, form
 
 from ${package_dotted_name}.content.${content_class_filename} import ${interface_name}
+
 
 grok.templatedir('templates')
 

@@ -1,5 +1,6 @@
-from five import grok
 from Products.CMFCore.interfaces import IContentish
+from five import grok
+
 
 grok.templatedir('templates')
 
