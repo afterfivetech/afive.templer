@@ -3,6 +3,7 @@
 *.egg-info
 *.egg
 *.db
+dist/
 bin/
 parts/
 develop-eggs/
