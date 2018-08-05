@@ -39,9 +39,22 @@
 #if str($folderish) == 'True'
     <fieldset id="folder-listing">
         <legend>Contents</legend>
-        <tal:block define="listing_macro context/folder_listing/macros/listing">
-            <metal:use_macro use-macro="listing_macro" />
-        </tal:block>
+        <ul tal:define="
+          Batch python:modules['Products.CMFPlone'].Batch;
+          b_size python:int(request.get('b_size', 20));
+          b_start python:int(request.get('b_start', 0));
+          results python:context.restrictedTraverse('@@folderListing')(batch=True, b_size=b_size, b_start=b_start);
+          batch python:Batch(results, b_size, b_start);">
+          <li tal:repeat="item results">
+            <tal:block tal:define="
+                item_path python:item.getPath();
+                item_title python:item.title;">
+              <a tal:attributes="href item_path" tal:content="item_title"/>
+            </tal:block>
+          </li>
+          <div metal:use-macro="context/batch_macros/macros/navigation" />
+        </ul>
+        <!-- note that in later version of p.app.contentlisting, view is called @@contentlisting -->
     </fieldset>
 #end if
 
@@ -50,4 +63,3 @@
 
 </body>
 </html>
-
