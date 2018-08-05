@@ -8,7 +8,6 @@ from plone.autoform.interfaces import IFormFieldProvider
 from plone.directives import dexterity, form
 from plone.formwidget.contenttree import ObjPathSourceBinder
 from plone.app.multilingual.dx.directives import languageindependent
-#from plone.multilingualbehavior.directives import languageindependent
 from plone.namedfile.field import NamedBlobImage, NamedBlobFile
 from plone.namedfile.field import NamedImage, NamedFile
 from plone.namedfile.interfaces import IImageScaleTraversable
