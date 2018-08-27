@@ -23,3 +23,9 @@ gs.profile(name=u'default',
            title=u'${namespace_package}.${package}',
            description=_(u''),
            directory='profiles/default')
+
+gs.profile(name=u'uninstall',
+           title=u'Uninstall: ${namespace_package}.${package}',
+           description=_(u''),
+           directory='profiles/uninstall')
+
